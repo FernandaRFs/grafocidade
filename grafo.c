@@ -30,7 +30,7 @@ void criarAresta (grafo *g, int x, int y) {
 void Arquivo(grafo *g){
   int x, y;
   FILE* arq=fopen("arquivo.txt","w");
-  fprintf(arq, "vertices: 15; Arestas: 14\n");
+  fprintf(arq, "vertices:%d\tArestas: 14\n", g->vertices);
   fprintf(arq, "0-ma 1-pi 2-ce 3-ba 4-pe 5-al 6-se 7-pb 8-rn\n");
   for (x = 0; x <= g->vertices ; x++)
   {
