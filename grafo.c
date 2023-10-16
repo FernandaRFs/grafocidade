@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include "grafo.h"
 int tamanho (int a, int b) {
     if (a > b) { 
       return a;
